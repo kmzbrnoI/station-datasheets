@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../apophis-style/en.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "../bahnhof.dtd">
+
+<bahnhof>
+	<name>Ždánice</name>
+	<kuerzel>ZD</kuerzel>
+	<typ>Bf</typ>
+	<verwaltung>DR</verwaltung>
+	<maszstab>120.0</maszstab>
+	<modulnr>27</modulnr>
+	<plan src="zd.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="gleis_1">
+				<name>1</name>
+				<laenge einheit="mm">1300.0</laenge>
+			</gleis>
+			<gleis id="gleis_3">
+				<name>3</name>
+				<laenge einheit="mm">1130.0</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="gleis_2">
+				<name>2</name>
+				<laenge einheit="mm">1450.0</laenge>
+			</gleis>
+			<gleis id="gleis_5">
+				<name>5</name>
+				<laenge einheit="mm">1130.0</laenge>
+			</gleis>
+			<gleis id="gleis_Fastener-Siding">
+				<name>Fastener-Siding</name>
+				<laenge einheit="mm">1000.0</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="gleis_1">
+			<name>1</name>
+			<laenge einheit="mm">450.0</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="gleis_3">
+			<name>3</name>
+			<laenge einheit="mm">450.0</laenge>
+		</bahnsteig>
+	</pv>
+	<gv>
+		<ladestelle id="warehouse" gleis="gleis_2">
+			<name>warehouse</name>
+			<laenge einheit="mm">150.0</laenge>
+		</ladestelle>
+		<ladestelle id="free_cargo_area" gleis="gleis_2">
+			<name>free cargo area</name>
+			<laenge einheit="mm">300.0</laenge>
+		</ladestelle>
+		<ladestelle id="Fastener_siding" gleis="gleis_Fastener-Siding">
+			<name>Fastener siding</name>
+			<laenge einheit="mm">1000.0</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Fastener Zdanice</name>
+			<empfang>
+				<ladegut ladestelle="Fastener_siding">
+					<name>steel</name>
+					<gattung>Glm, E</gattung>
+					<wagen zeitraum="tag">3.0</wagen>
+				</ladegut>
+				<ladegut ladestelle="Fastener_siding">
+					<name>coal</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="tag">1.0</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Fastener_siding">
+					<name>nuts, rivets, screws, washers</name>
+					<gattung>Glm</gattung>
+					<wagen zeitraum="tag">3.0</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Brick Factory</name>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>coal</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">3.0</wagen>
+				</ladegut>
+				<ladegut ladestelle="free_cargo_area">
+					<name>brick</name>
+					<gattung>Uacs, E</gattung>
+					<wagen zeitraum="woche">1.0</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="free_cargo_area">
+					<name>brick</name>
+					<gattung>Glm, E</gattung>
+					<wagen zeitraum="tag">2.0</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>State Farm</name>
+			<versand>
+				<ladegut ladestelle="free_cargo_area">
+					<name>milk</name>
+					<gattung>I</gattung>
+					<wagen zeitraum="woche">2.0</wagen>
+				</ladegut>
+				<ladegut ladestelle="free_cargo_area">
+					<name>beef</name>
+					<gattung>I</gattung>
+					<wagen zeitraum="woche">2.0</wagen>
+				</ladegut>
+				<ladegut ladestelle="free_cargo_area">
+					<name>corn</name>
+					<gattung>Glm, E</gattung>
+					<wagen zeitraum="tag">3.0</wagen>
+				</ladegut>
+				<ladegut ladestelle="free_cargo_area">
+					<name>potatoes</name>
+					<gattung>Glm, E</gattung>
+					<wagen zeitraum="woche">2.0</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Agricultural Cooperative</name>
+			<versand>
+				<ladegut ladestelle="warehouse">
+					<name>wine</name>
+					<gattung>Glm</gattung>
+					<wagen zeitraum="woche">2.0</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Public Shop</name>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>coal</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">2.0</wagen>
+				</ladegut>
+				<ladegut ladestelle="free_cargo_area">
+					<name>precast concrete products</name>
+					<gattung>E, Kbkks</gattung>
+					<wagen zeitraum="woche">1.0</wagen>
+				</ladegut>
+				<ladegut ladestelle="Fastener_siding">
+					<name>sand</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">1.0</wagen>
+				</ladegut>
+				<ladegut ladestelle="free_cargo_area">
+					<name>treated wood</name>
+					<gattung>Kbkks</gattung>
+					<wagen zeitraum="woche">1.0</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="free_cargo_area">
+					<name>raw wood</name>
+					<gattung>Kbkks</gattung>
+					<wagen zeitraum="woche">1.0</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Piece goods</name>
+			<empfang>
+				<ladegut ladestelle="warehouse">
+					<name>piece goods - R</name>
+					<gattung>Glm</gattung>
+					<wagen zeitraum="woche">2.0</wagen>
+				</ladegut>
+				<ladegut ladestelle="warehouse">
+					<name>mail</name>
+					<gattung>Glm</gattung>
+					<wagen zeitraum="tag">1.0</wagen>
+				</ladegut>
+				<ladegut ladestelle="warehouse">
+					<name>Milk bottles</name>
+					<gattung>Glm</gattung>
+					<wagen zeitraum="tag">1.0</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="warehouse">
+					<name>piece goods - D</name>
+					<gattung>Glm</gattung>
+					<wagen zeitraum="woche">2.0</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>local food shop</name>
+			<empfang>
+				<ladegut ladestelle="warehouse">
+					<name>food</name>
+					<gattung>Glm, I</gattung>
+					<wagen zeitraum="tag">1.0</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+	</gv>
+</bahnhof>
+
