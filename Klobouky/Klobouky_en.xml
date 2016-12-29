@@ -20,51 +20,51 @@
 		<hgleise>
 			<gleis id="kolej_1">
 				<name>1</name>
-				<laenge einheit="mm">1300.0</laenge>
+				<laenge einheit="mm">1300</laenge>
 				<bemerkung>Length together with 1a</bemerkung>
 			</gleis>
 			<gleis id="kolej_3">
 				<name>3</name>
-				<laenge einheit="mm">1500.0</laenge>
+				<laenge einheit="mm">1500</laenge>
 			</gleis>
 			<gleis id="kolej_1a">
 				<name>1a</name>
-				<laenge einheit="mm">200.0</laenge>
+				<laenge einheit="mm">200</laenge>
 			</gleis>
 		</hgleise>
 		<ngleise>
 			<gleis id="kolej_2">
 				<name>2</name>
-				<laenge einheit="mm">700.0</laenge>
+				<laenge einheit="mm">700</laenge>
 			</gleis>
 			<gleis id="kolej_2a">
 				<name>2a</name>
-				<laenge einheit="mm">650.0</laenge>
+				<laenge einheit="mm">650</laenge>
 			</gleis>
 			<gleis id="kolej_2b">
 				<name>2b</name>
-				<laenge einheit="mm">670.0</laenge>
+				<laenge einheit="mm">670</laenge>
 			</gleis>
 		</ngleise>
 	</gleise>
 	<pv>
 		<bahnsteig gleis="kolej_1">
 			<name>1</name>
-			<laenge einheit="mm">500.0</laenge>
+			<laenge einheit="mm">500</laenge>
 		</bahnsteig>
 	</pv>
 	<gv>
 		<ladestelle id="warehouse" gleis="kolej_2">
 			<name>warehouse</name>
-			<laenge einheit="mm">100.0</laenge>
+			<laenge einheit="mm">100</laenge>
 		</ladestelle>
 		<ladestelle id="ramp" gleis="kolej_2b">
 			<name>ramp</name>
-			<laenge einheit="mm">400.0</laenge>
+			<laenge einheit="mm">400</laenge>
 		</ladestelle>
 		<ladestelle id="brick_factory_free_cargo_area" gleis="kolej_2a">
 			<name>brick factory, free cargo area</name>
-			<laenge einheit="mm">700.0</laenge>
+			<laenge einheit="mm">700</laenge>
 		</ladestelle>
 		<verlader>
 			<name>Moravian Oil Mines</name>
@@ -72,7 +72,7 @@
 				<ladegut ladestelle="ramp">
 					<name>oil</name>
 					<gattung>Uachs, Z</gattung>
-					<wagen zeitraum="tag">1.0</wagen>
+					<wagen zeitraum="tag">1</wagen>
 				</ladegut>
 			</versand>
 		</verlader>
@@ -82,29 +82,29 @@
 				<ladegut ladestelle="ramp">
 					<name>agricultural machinery</name>
 					<gattung>Kbkks</gattung>
-					<wagen zeitraum="woche">1.0</wagen>
+					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 			</empfang>
 			<versand>
 				<ladegut ladestelle="warehouse">
 					<name>beet</name>
 					<gattung>E</gattung>
-					<wagen zeitraum="woche">5.0</wagen>
+					<wagen zeitraum="woche">5</wagen>
 				</ladegut>
 				<ladegut ladestelle="warehouse">
 					<name>milk</name>
 					<gattung>Glm</gattung>
-					<wagen zeitraum="woche">1.0</wagen>
+					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 				<ladegut ladestelle="ramp">
 					<name>corn</name>
 					<gattung>E</gattung>
-					<wagen zeitraum="tag">2.0</wagen>
+					<wagen zeitraum="tag">2</wagen>
 				</ladegut>
 				<ladegut ladestelle="ramp">
 					<name>potatoes</name>
 					<gattung>E</gattung>
-					<wagen zeitraum="tag">1.0</wagen>
+					<wagen zeitraum="tag">1</wagen>
 				</ladegut>
 			</versand>
 		</verlader>
@@ -114,14 +114,14 @@
 				<ladegut ladestelle="brick_factory_free_cargo_area">
 					<name>coal</name>
 					<gattung>E</gattung>
-					<wagen zeitraum="woche">2.0</wagen>
+					<wagen zeitraum="woche">2</wagen>
 				</ladegut>
 			</empfang>
 			<versand>
 				<ladegut ladestelle="brick_factory_free_cargo_area">
 					<name>bricks</name>
 					<gattung>E, Glm</gattung>
-					<wagen zeitraum="tag">2.0</wagen>
+					<wagen zeitraum="tag">2</wagen>
 				</ladegut>
 			</versand>
 		</verlader>
@@ -131,14 +131,14 @@
 				<ladegut ladestelle="brick_factory_free_cargo_area">
 					<name>raw wood</name>
 					<gattung>Kbkks</gattung>
-					<wagen zeitraum="tag">1.0</wagen>
+					<wagen zeitraum="tag">1</wagen>
 				</ladegut>
 			</empfang>
 			<versand>
 				<ladegut ladestelle="warehouse">
 					<name>battens</name>
 					<gattung>Kns, Res, Kbmp, Smmp</gattung>
-					<wagen zeitraum="woche">3.0</wagen>
+					<wagen zeitraum="woche">3</wagen>
 				</ladegut>
 			</versand>
 		</verlader>
@@ -148,7 +148,7 @@
 				<ladegut ladestelle="warehouse">
 					<name>food</name>
 					<gattung>Glm, I</gattung>
-					<wagen zeitraum="tag">1.0</wagen>
+					<wagen zeitraum="tag">1</wagen>
 				</ladegut>
 			</empfang>
 		</verlader>

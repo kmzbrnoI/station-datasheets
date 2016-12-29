@@ -9,7 +9,7 @@
 	<kuerzel>UH</kuerzel>
 	<typ>Bf</typ>
 	<verwaltung>DR</verwaltung>
-	<maszstab>120.0</maszstab>
+	<maszstab>120</maszstab>
 	<modulnr>30</modulnr>
 	<plan src="uh.png" />
 	<gleise>
@@ -20,58 +20,58 @@
 		<hgleise>
 			<gleis id="gleis_1">
 				<name>1</name>
-				<laenge einheit="mm">1310.0</laenge>
+				<laenge einheit="mm">1310</laenge>
 			</gleis>
 			<gleis id="gleis_3">
 				<name>3</name>
-				<laenge einheit="mm">1310.0</laenge>
+				<laenge einheit="mm">1310</laenge>
 			</gleis>
 		</hgleise>
 		<ngleise>
 			<gleis id="gleis_2">
 				<name>2</name>
-				<laenge einheit="mm">1300.0</laenge>
+				<laenge einheit="mm">1300</laenge>
 			</gleis>
 			<gleis id="gleis_2a">
 				<name>2a</name>
-				<laenge einheit="mm">620.0</laenge>
+				<laenge einheit="mm">620</laenge>
 			</gleis>
 			<gleis id="gleis_3a">
 				<name>3a</name>
-				<laenge einheit="mm">430.0</laenge>
+				<laenge einheit="mm">430</laenge>
 			</gleis>
 			<gleis id="gleis_StG">
 				<name>StG</name>
-				<laenge einheit="mm">750.0</laenge>
+				<laenge einheit="mm">750</laenge>
 			</gleis>
 		</ngleise>
 	</gleise>
 	<pv>
 		<bahnsteig gleis="gleis_1">
 			<name>1</name>
-			<laenge einheit="mm">555.0</laenge>
+			<laenge einheit="mm">555</laenge>
 		</bahnsteig>
 		<bahnsteig gleis="gleis_3">
 			<name>3</name>
-			<laenge einheit="mm">300.0</laenge>
+			<laenge einheit="mm">300</laenge>
 		</bahnsteig>
 	</pv>
 	<gv>
 		<ladestelle id="warehouse" gleis="gleis_2">
 			<name>warehouse</name>
-			<laenge einheit="mm">200.0</laenge>
+			<laenge einheit="mm">200</laenge>
 		</ladestelle>
 		<ladestelle id="granary" gleis="gleis_StG">
 			<name>granary</name>
-			<laenge einheit="mm">300.0</laenge>
+			<laenge einheit="mm">300</laenge>
 		</ladestelle>
 		<ladestelle id="free_cargo_area" gleis="gleis_2 gleis_3a">
 			<name>free cargo area</name>
-			<laenge einheit="mm">550.0</laenge>
+			<laenge einheit="mm">550</laenge>
 		</ladestelle>
 		<ladestelle id="oil_transfer_station" gleis="gleis_2a">
 			<name>oil transfer station</name>
-			<laenge einheit="mm">620.0</laenge>
+			<laenge einheit="mm">620</laenge>
 		</ladestelle>
 		<verlader>
 			<name>Moravian Oil Mines</name>
@@ -79,7 +79,7 @@
 				<ladegut ladestelle="oil_transfer_station">
 					<name>oil</name>
 					<gattung>Uachs, Z</gattung>
-					<wagen zeitraum="woche">8.0</wagen>
+					<wagen zeitraum="woche">8</wagen>
 				</ladegut>
 			</versand>
 		</verlader>
@@ -89,7 +89,7 @@
 				<ladegut ladestelle="granary">
 					<name>grain</name>
 					<gattung>Z, Gags</gattung>
-					<wagen zeitraum="woche">3.0</wagen>
+					<wagen zeitraum="woche">3</wagen>
 				</ladegut>
 			</versand>
 		</verlader>
@@ -99,19 +99,19 @@
 				<ladegut ladestelle="free_cargo_area warehouse">
 					<name>manure</name>
 					<gattung>Utz</gattung>
-					<wagen zeitraum="woche">1.0</wagen>
+					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 			</empfang>
 			<versand>
 				<ladegut ladestelle="free_cargo_area warehouse">
 					<name>milk</name>
 					<gattung>Z</gattung>
-					<wagen zeitraum="woche">1.0</wagen>
+					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 				<ladegut ladestelle="free_cargo_area warehouse">
 					<name>beet</name>
 					<gattung>Z</gattung>
-					<wagen zeitraum="woche">1.0</wagen>
+					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 			</versand>
 		</verlader>
@@ -121,19 +121,19 @@
 				<ladegut ladestelle="free_cargo_area warehouse">
 					<name>piece goods - R</name>
 					<gattung>Z</gattung>
-					<wagen zeitraum="woche">1.0</wagen>
+					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 				<ladegut ladestelle="free_cargo_area warehouse">
 					<name>coal</name>
 					<gattung>Vtr</gattung>
-					<wagen>1.0</wagen>
+					<wagen>1</wagen>
 				</ladegut>
 			</empfang>
 			<versand>
 				<ladegut ladestelle="free_cargo_area warehouse">
 					<name>piece goods - D</name>
 					<gattung>Z</gattung>
-					<wagen zeitraum="woche">1.0</wagen>
+					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 			</versand>
 		</verlader>
