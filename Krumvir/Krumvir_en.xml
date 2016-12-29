@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../apophis-style/style.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "../bahnhof.dtd">
+
+<bahnhof>
+	<basecss>../apophis-style/style.css</basecss>
+	<langcss>../apophis-style/en.css</langcss>
+	<name>Krumvíř</name>
+	<kuerzel>KRM</kuerzel>
+	<typ>LS</typ>
+	<langtyp>loading station with halt</langtyp>
+	<verwaltung>ČSD</verwaltung>
+	<maszstab>120</maszstab>
+	<modulnr>26</modulnr>
+	<plan src="krm.png" />
+	<gleise>
+		<zulaufstrecken>
+			<rechts nr="1">1gl</rechts>
+			<rechts nr="2">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="kolej_1">
+				<name>1</name>
+				<laenge einheit="mm">1100</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="kolej_2">
+				<name>2</name>
+				<laenge einheit="mm">1100</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="kolej_1">
+			<name>1</name>
+			<laenge einheit="mm">500</laenge>
+			<bemerkung>Only halt.</bemerkung>
+		</bahnsteig>
+	</pv>
+	<gv>
+		<ladestelle id="free_cargo_area" gleis="kolej_1">
+			<name>free cargo area</name>
+			<laenge einheit="mm">500</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Agricultural Cooperative</name>
+			<versand>
+				<ladegut ladestelle="free_cargo_area">
+					<name>beet</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">3</wagen>
+				</ladegut>
+				<ladegut ladestelle="free_cargo_area">
+					<name>potatoes</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">3</wagen>
+				</ladegut>
+				<ladegut ladestelle="free_cargo_area">
+					<name>wine</name>
+					<gattung>Glm</gattung>
+					<wagen zeitraum="woche">5</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Local shops</name>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>coal</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="free_cargo_area">
+					<name>piece goods</name>
+					<gattung>Glm</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+	</gv>
+</bahnhof>
