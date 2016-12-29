@@ -75,19 +75,19 @@
 			<empfang>
 				<ladegut ladestelle="Fastener_siding">
 					<name>steel</name>
-					<gattung>Glm, E</gattung>
+					<gattung>Glm/Ztr, E/Vtr</gattung>
 					<wagen zeitraum="tag">3</wagen>
 				</ladegut>
 				<ladegut ladestelle="Fastener_siding">
 					<name>coal</name>
-					<gattung>E</gattung>
+					<gattung>E/Vtr</gattung>
 					<wagen zeitraum="tag">1</wagen>
 				</ladegut>
 			</empfang>
 			<versand>
 				<ladegut ladestelle="Fastener_siding">
 					<name>nuts, rivets, screws, washers</name>
-					<gattung>Glm</gattung>
+					<gattung>Glm/Ztr</gattung>
 					<wagen zeitraum="tag">3</wagen>
 				</ladegut>
 			</versand>
@@ -97,19 +97,19 @@
 			<empfang>
 				<ladegut ladestelle="free_cargo_area">
 					<name>coal</name>
-					<gattung>E</gattung>
+					<gattung>E/Vtr</gattung>
 					<wagen zeitraum="woche">3</wagen>
 				</ladegut>
 				<ladegut ladestelle="free_cargo_area">
 					<name>brick</name>
-					<gattung>Uacs, E</gattung>
+					<gattung>Uacs, E/Vtr</gattung>
 					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 			</empfang>
 			<versand>
 				<ladegut ladestelle="free_cargo_area">
 					<name>brick</name>
-					<gattung>Glm, E</gattung>
+					<gattung>Glm/Ztr, E/Vtr</gattung>
 					<wagen zeitraum="tag">2</wagen>
 				</ladegut>
 			</versand>
@@ -129,12 +129,12 @@
 				</ladegut>
 				<ladegut ladestelle="free_cargo_area">
 					<name>corn</name>
-					<gattung>Glm, E</gattung>
+					<gattung>Glm/Ztr, E/Vtr</gattung>
 					<wagen zeitraum="tag">3</wagen>
 				</ladegut>
 				<ladegut ladestelle="free_cargo_area">
 					<name>potatoes</name>
-					<gattung>Glm, E</gattung>
+					<gattung>Glm/Ztr, E/Vtr</gattung>
 					<wagen zeitraum="woche">2</wagen>
 				</ladegut>
 			</versand>
@@ -144,7 +144,7 @@
 			<versand>
 				<ladegut ladestelle="warehouse">
 					<name>wine</name>
-					<gattung>Glm</gattung>
+					<gattung>Glm/Ztr</gattung>
 					<wagen zeitraum="woche">2</wagen>
 				</ladegut>
 			</versand>
@@ -154,17 +154,17 @@
 			<empfang>
 				<ladegut ladestelle="free_cargo_area">
 					<name>coal</name>
-					<gattung>E</gattung>
+					<gattung>E/Vtr</gattung>
 					<wagen zeitraum="woche">2</wagen>
 				</ladegut>
 				<ladegut ladestelle="free_cargo_area">
 					<name>precast concrete products</name>
-					<gattung>E, Kbkks</gattung>
+					<gattung>E/Vtr, Kbkks</gattung>
 					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 				<ladegut ladestelle="Fastener_siding">
 					<name>sand</name>
-					<gattung>E</gattung>
+					<gattung>E/Vtr</gattung>
 					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 				<ladegut ladestelle="free_cargo_area">
@@ -186,24 +186,24 @@
 			<empfang>
 				<ladegut ladestelle="warehouse">
 					<name>piece goods - R</name>
-					<gattung>Glm</gattung>
+					<gattung>Glm/Ztr</gattung>
 					<wagen zeitraum="woche">2</wagen>
 				</ladegut>
 				<ladegut ladestelle="warehouse">
 					<name>mail</name>
-					<gattung>Glm</gattung>
+					<gattung>Glm/Ztr</gattung>
 					<wagen zeitraum="tag">1</wagen>
 				</ladegut>
 				<ladegut ladestelle="warehouse">
 					<name>Milk bottles</name>
-					<gattung>Glm</gattung>
+					<gattung>Glm/Ztr</gattung>
 					<wagen zeitraum="tag">1</wagen>
 				</ladegut>
 			</empfang>
 			<versand>
 				<ladegut ladestelle="warehouse">
 					<name>piece goods - D</name>
-					<gattung>Glm</gattung>
+					<gattung>Glm/Ztr</gattung>
 					<wagen zeitraum="woche">2</wagen>
 				</ladegut>
 			</versand>
@@ -213,7 +213,7 @@
 			<empfang>
 				<ladegut ladestelle="warehouse">
 					<name>food</name>
-					<gattung>Glm, I</gattung>
+					<gattung>Glm/Ztr, I</gattung>
 					<wagen zeitraum="tag">1</wagen>
 				</ladegut>
 			</empfang>
@@ -223,7 +223,7 @@
 			<empfang>
 				<ladegut ladestelle="coal_depot">
 					<name>coal</name>
-					<gattung>E</gattung>
+					<gattung>E/Vtr</gattung>
 					<wagen zeitraum="woche">5</wagen>
 				</ladegut>
 			</empfang>

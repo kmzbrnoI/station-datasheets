@@ -79,7 +79,7 @@
 			<versand>
 				<ladegut ladestelle="oil_transfer_station">
 					<name>oil</name>
-					<gattung>Uachs, Z</gattung>
+					<gattung>Uachs, Glm/Z</gattung>
 					<wagen zeitraum="woche">8</wagen>
 				</ladegut>
 			</versand>
@@ -89,7 +89,7 @@
 			<versand>
 				<ladegut ladestelle="granary">
 					<name>grain</name>
-					<gattung>Z, Gags</gattung>
+					<gattung>Glm/Z, Gags, Gbgs/Zts</gattung>
 					<wagen zeitraum="woche">3</wagen>
 				</ladegut>
 			</versand>
@@ -99,19 +99,19 @@
 			<empfang>
 				<ladegut ladestelle="free_cargo_area warehouse">
 					<name>manure</name>
-					<gattung>Utz</gattung>
+					<gattung>Tcms/Utz</gattung>
 					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 			</empfang>
 			<versand>
 				<ladegut ladestelle="free_cargo_area warehouse">
 					<name>milk</name>
-					<gattung>Z</gattung>
+					<gattung>Glm/Ztr</gattung>
 					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 				<ladegut ladestelle="free_cargo_area warehouse">
 					<name>beet</name>
-					<gattung>Z</gattung>
+					<gattung>Glm/Ztr</gattung>
 					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 			</versand>
@@ -121,19 +121,19 @@
 			<empfang>
 				<ladegut ladestelle="free_cargo_area warehouse">
 					<name>piece goods - R</name>
-					<gattung>Z</gattung>
+					<gattung>Glm/Z</gattung>
 					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 				<ladegut ladestelle="free_cargo_area warehouse">
 					<name>coal</name>
-					<gattung>Vtr</gattung>
+					<gattung>E/Vtr</gattung>
 					<wagen>1</wagen>
 				</ladegut>
 			</empfang>
 			<versand>
 				<ladegut ladestelle="free_cargo_area warehouse">
 					<name>piece goods - D</name>
-					<gattung>Z</gattung>
+					<gattung>Glm/Z</gattung>
 					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 			</versand>

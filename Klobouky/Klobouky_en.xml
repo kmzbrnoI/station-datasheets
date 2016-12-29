@@ -72,7 +72,7 @@
 			<versand>
 				<ladegut ladestelle="ramp">
 					<name>oil</name>
-					<gattung>Uachs, Z</gattung>
+					<gattung>Uachs, Glm/Z</gattung>
 					<wagen zeitraum="tag">1</wagen>
 				</ladegut>
 			</versand>
@@ -89,22 +89,22 @@
 			<versand>
 				<ladegut ladestelle="warehouse">
 					<name>beet</name>
-					<gattung>E</gattung>
+					<gattung>E/Vtr</gattung>
 					<wagen zeitraum="woche">5</wagen>
 				</ladegut>
 				<ladegut ladestelle="warehouse">
 					<name>milk</name>
-					<gattung>Glm</gattung>
+					<gattung>Glm/Ztr</gattung>
 					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 				<ladegut ladestelle="ramp">
 					<name>corn</name>
-					<gattung>E</gattung>
+					<gattung>E/Vtr</gattung>
 					<wagen zeitraum="tag">2</wagen>
 				</ladegut>
 				<ladegut ladestelle="ramp">
 					<name>potatoes</name>
-					<gattung>E</gattung>
+					<gattung>E/Vtr</gattung>
 					<wagen zeitraum="tag">1</wagen>
 				</ladegut>
 			</versand>
@@ -114,14 +114,14 @@
 			<empfang>
 				<ladegut ladestelle="brick_factory_free_cargo_area">
 					<name>coal</name>
-					<gattung>E</gattung>
+					<gattung>E/Vtr</gattung>
 					<wagen zeitraum="woche">2</wagen>
 				</ladegut>
 			</empfang>
 			<versand>
 				<ladegut ladestelle="brick_factory_free_cargo_area">
 					<name>bricks</name>
-					<gattung>E, Glm</gattung>
+					<gattung>E/Vtr, Glm/Ztr</gattung>
 					<wagen zeitraum="tag">2</wagen>
 				</ladegut>
 			</versand>
@@ -148,7 +148,7 @@
 			<empfang>
 				<ladegut ladestelle="warehouse">
 					<name>food</name>
-					<gattung>Glm, I</gattung>
+					<gattung>Glm/Ztr, I</gattung>
 					<wagen zeitraum="tag">1</wagen>
 				</ladegut>
 			</empfang>

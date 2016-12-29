@@ -48,17 +48,17 @@
 			<versand>
 				<ladegut ladestelle="free_cargo_area">
 					<name>beet</name>
-					<gattung>E</gattung>
+					<gattung>E/Vtr</gattung>
 					<wagen zeitraum="woche">3</wagen>
 				</ladegut>
 				<ladegut ladestelle="free_cargo_area">
 					<name>potatoes</name>
-					<gattung>E</gattung>
+					<gattung>E/Vtr</gattung>
 					<wagen zeitraum="woche">3</wagen>
 				</ladegut>
 				<ladegut ladestelle="free_cargo_area">
 					<name>wine</name>
-					<gattung>Glm</gattung>
+					<gattung>Glm/Ztr</gattung>
 					<wagen zeitraum="woche">5</wagen>
 				</ladegut>
 			</versand>
@@ -68,12 +68,12 @@
 			<empfang>
 				<ladegut ladestelle="free_cargo_area">
 					<name>coal</name>
-					<gattung>E</gattung>
+					<gattung>E/Vtr</gattung>
 					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 				<ladegut ladestelle="free_cargo_area">
 					<name>piece goods</name>
-					<gattung>Glm</gattung>
+					<gattung>Glm/Ztr</gattung>
 					<wagen zeitraum="woche">1</wagen>
 				</ladegut>
 			</empfang>
