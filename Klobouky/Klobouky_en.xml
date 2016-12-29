@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../apophis-style/en.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../apophis-style/style.xsl"?>
 <!DOCTYPE bahnhof SYSTEM "../bahnhof.dtd">
 
 <bahnhof>
+	<basecss>../apophis-style/style.css</basecss>
+	<langcss>../apophis-style/en.css</langcss>
 	<name>Klobouky u Brna</name>
 	<kuerzel>KLB</kuerzel>
 	<typ>Bf</typ>
 	<verwaltung>ČSD</verwaltung>
-	<maszstab>120.0</maszstab>
+	<maszstab>120</maszstab>
 	<modulnr>24</modulnr>
 	<plan src="klb.png" />
 	<gleise>

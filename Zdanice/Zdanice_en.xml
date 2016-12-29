@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../apophis-style/en.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../apophis-style/style.xsl"?>
 <!DOCTYPE bahnhof SYSTEM "../bahnhof.dtd">
 
 <bahnhof>
+	<basecss>../apophis-style/style.css</basecss>
+	<langcss>../apophis-style/en.css</langcss>
 	<name>Ždánice</name>
 	<kuerzel>ZD</kuerzel>
 	<typ>Bf</typ>
 	<verwaltung>DR</verwaltung>
-	<maszstab>120.0</maszstab>
+	<maszstab>120</maszstab>
 	<modulnr>27</modulnr>
 	<plan src="zd.png" />
 	<gleise>
