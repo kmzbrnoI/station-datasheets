@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../apophis-style/style.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "../bahnhof.dtd">
+
+<bahnhof>
+	<basecss>../apophis-style/style.css</basecss>
+	<langcss>../apophis-style/cz.css</langcss>
+	<name>Klobouky u Brna</name>
+	<kuerzel>KLB</kuerzel>
+	<typ>stanice</typ>
+	<langtyp>stanice</langtyp>
+	<verwaltung>ČSD</verwaltung>
+	<maszstab>120</maszstab>
+	<modulnr>24</modulnr>
+	<plan src="klb.png" />
+	<gleise>
+		<zulaufstrecken>
+			<rechts nr="1">1gl</rechts>
+			<rechts nr="2">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="kolej_1">
+				<name>1</name>
+				<laenge einheit="mm">1300</laenge>
+				<bemerkung>Délka dohromady s kolejí 1a</bemerkung>
+			</gleis>
+			<gleis id="kolej_3">
+				<name>3</name>
+				<laenge einheit="mm">1500</laenge>
+			</gleis>
+			<gleis id="kolej_1a">
+				<name>1a</name>
+				<laenge einheit="mm">200</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="kolej_2">
+				<name>2</name>
+				<laenge einheit="mm">700</laenge>
+			</gleis>
+			<gleis id="kolej_2a">
+				<name>2a</name>
+				<laenge einheit="mm">650</laenge>
+			</gleis>
+			<gleis id="kolej_2b">
+				<name>2b</name>
+				<laenge einheit="mm">670</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="kolej_1">
+			<name>1</name>
+			<laenge einheit="mm">500</laenge>
+		</bahnsteig>
+	</pv>
+	<gv>
+		<ladestelle id="warehouse" gleis="kolej_2">
+			<name>skladiště</name>
+			<laenge einheit="mm">100</laenge>
+		</ladestelle>
+		<ladestelle id="ramp" gleis="kolej_2b">
+			<name>rampa</name>
+			<laenge einheit="mm">400</laenge>
+		</ladestelle>
+		<ladestelle id="brick_factory_free_cargo_area" gleis="kolej_2a">
+			<name>cihelna, volná nákladová plocha</name>
+			<laenge einheit="mm">700</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Moravské naftové doly</name>
+			<versand>
+				<ladegut ladestelle="ramp">
+					<name>nafta</name>
+					<gattung>Uachs, Z</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>JZD Klobouky u Brna</name>
+			<empfang>
+				<ladegut ladestelle="ramp">
+					<name>zemědělské stroje</name>
+					<gattung>Kbkks</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="warehouse">
+					<name>řepa</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">5</wagen>
+				</ladegut>
+				<ladegut ladestelle="warehouse">
+					<name>mléko</name>
+					<gattung>Glm</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="ramp">
+					<name>kukuřice</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="ramp">
+					<name>brambory</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Cihelna</name>
+			<empfang>
+				<ladegut ladestelle="brick_factory_free_cargo_area">
+					<name>uhlí</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="brick_factory_free_cargo_area">
+					<name>cihly</name>
+					<gattung>E, Glm</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Pila Klobouky</name>
+			<empfang>
+				<ladegut ladestelle="brick_factory_free_cargo_area">
+					<name>surové dřevo</name>
+					<gattung>Kbkks</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="warehouse">
+					<name>latě</name>
+					<gattung>Kns, Res, Kbmp, Smmp</gattung>
+					<wagen zeitraum="woche">3</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Potraviny Klobouky u Brna</name>
+			<empfang>
+				<ladegut ladestelle="warehouse">
+					<name>potraviny</name>
+					<gattung>Glm, I</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+	</gv>
+</bahnhof>
+
