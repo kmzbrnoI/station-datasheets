@@ -65,6 +65,10 @@
 			<name>Fastener siding</name>
 			<laenge einheit="mm">1000.0</laenge>
 		</ladestelle>
+		<ladestelle id="coal_depot" gleis="gleis_2">
+			<name>Coal depot</name>
+			<laenge einheit="mm">200</laenge>
+		</ladestelle>
 		<verlader>
 			<name>Fastener Zdanice</name>
 			<empfang>
@@ -204,12 +208,22 @@
 			</versand>
 		</verlader>
 		<verlader>
-			<name>local food shop</name>
+			<name>Local food shop</name>
 			<empfang>
 				<ladegut ladestelle="warehouse">
 					<name>food</name>
 					<gattung>Glm, I</gattung>
 					<wagen zeitraum="tag">1.0</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Coal depot Zdanice</name>
+			<empfang>
+				<ladegut ladestelle="coal_depot">
+					<name>coal</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">5.0</wagen>
 				</ladegut>
 			</empfang>
 		</verlader>
