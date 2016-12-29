@@ -14,5 +14,6 @@ Just edit `xml` files.
 
 You should initialize submodules after fetching this repo by typing
 ```
-git submodule add git@github.com:kmzbrnoI/ds-apophis-style apophis-style
+git submodule init
+git submodule update
 ```
