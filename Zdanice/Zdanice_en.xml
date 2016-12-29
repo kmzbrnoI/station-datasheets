@@ -7,8 +7,9 @@
 	<langcss>../apophis-style/en.css</langcss>
 	<name>Ždánice</name>
 	<kuerzel>ZD</kuerzel>
-	<typ>Bf</typ>
-	<verwaltung>DR</verwaltung>
+	<typ>station</typ>
+	<langtyp>station</langtyp>
+	<verwaltung>ČSD</verwaltung>
 	<maszstab>120</maszstab>
 	<modulnr>27</modulnr>
 	<plan src="zd.png" />

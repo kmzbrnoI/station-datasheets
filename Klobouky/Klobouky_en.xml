@@ -7,7 +7,8 @@
 	<langcss>../apophis-style/en.css</langcss>
 	<name>Klobouky u Brna</name>
 	<kuerzel>KLB</kuerzel>
-	<typ>Bf</typ>
+	<typ>station</typ>
+	<langtyp>station</langtyp>
 	<verwaltung>ČSD</verwaltung>
 	<maszstab>120</maszstab>
 	<modulnr>24</modulnr>

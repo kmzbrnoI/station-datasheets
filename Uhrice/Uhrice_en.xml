@@ -7,7 +7,8 @@
 	<langcss>../apophis-style/en.css</langcss>
 	<name>Uhřice u Kyjova</name>
 	<kuerzel>UH</kuerzel>
-	<typ>Bf</typ>
+	<typ>station</typ>
+	<langtyp>station</langtyp>
 	<verwaltung>DR</verwaltung>
 	<maszstab>120</maszstab>
 	<modulnr>30</modulnr>
