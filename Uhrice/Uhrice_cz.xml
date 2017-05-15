@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../apophis-style/style.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "../bahnhof.dtd">
+
+<bahnhof>
+	<basecss>../apophis-style/style.css</basecss>
+	<langcss>../apophis-style/cz.css</langcss>
+	<name>Uhřice u Kyjova</name>
+	<kuerzel>UH</kuerzel>
+	<typ>stanice</typ>
+	<langtyp>stanice</langtyp>
+	<verwaltung>DR</verwaltung>
+	<maszstab>120</maszstab>
+	<modulnr>30</modulnr>
+	<plan src="uh.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="gleis_1">
+				<name>1</name>
+				<laenge einheit="mm">1310</laenge>
+			</gleis>
+			<gleis id="gleis_3">
+				<name>3</name>
+				<laenge einheit="mm">1310</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="gleis_2">
+				<name>2</name>
+				<laenge einheit="mm">1300</laenge>
+			</gleis>
+			<gleis id="gleis_2a">
+				<name>2a</name>
+				<laenge einheit="mm">620</laenge>
+			</gleis>
+			<gleis id="gleis_3a">
+				<name>3a</name>
+				<laenge einheit="mm">430</laenge>
+			</gleis>
+			<gleis id="gleis_StG">
+				<name>Vl. silo</name>
+				<laenge einheit="mm">750</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="gleis_1">
+			<name>1</name>
+			<laenge einheit="mm">555</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="gleis_3">
+			<name>3</name>
+			<laenge einheit="mm">300</laenge>
+		</bahnsteig>
+	</pv>
+	<gv>
+		<ladestelle id="warehouse" gleis="gleis_2">
+			<name>skladiště</name>
+			<laenge einheit="mm">200</laenge>
+		</ladestelle>
+		<ladestelle id="granary" gleis="gleis_StG">
+			<name>silo</name>
+			<laenge einheit="mm">300</laenge>
+		</ladestelle>
+		<ladestelle id="free_cargo_area" gleis="gleis_2 gleis_3a">
+			<name>volná nákladová plocha</name>
+			<laenge einheit="mm">550</laenge>
+		</ladestelle>
+		<ladestelle id="oil_transfer_station" gleis="gleis_2a">
+			<name>stačírna Moravských naftových dolů</name>
+			<laenge einheit="mm">620</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Moravské naftové doly</name>
+			<versand>
+				<ladegut ladestelle="oil_transfer_station">
+					<name>ropa</name>
+					<gattung>Uachs, Glm/Z</gattung>
+					<wagen zeitraum="woche">8</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Silo Uhřice</name>
+			<versand>
+				<ladegut ladestelle="granary">
+					<name>obilí</name>
+					<gattung>Glm/Z, Gags, Gbgs/Zts</gattung>
+					<wagen zeitraum="woche">3</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>JZD Uhřice</name>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area warehouse">
+					<name>hnůj</name>
+					<gattung>Tcms/Utz</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="free_cargo_area warehouse">
+					<name>mléko</name>
+					<gattung>Glm/Ztr</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="free_cargo_area warehouse">
+					<name>řepa</name>
+					<gattung>Glm/Ztr</gattung>
+					<wagen zeitraum="woche">4</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Kusové zásilky</name>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area warehouse">
+					<name>kusové zásilky</name>
+					<gattung>Glm/Z</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="free_cargo_area warehouse">
+					<name>uhlí</name>
+					<gattung>E/Vtr</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="free_cargo_area warehouse">
+					<name>kusové zásilky</name>
+					<gattung>Glm/Z</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+	</gv>
+</bahnhof>
+
