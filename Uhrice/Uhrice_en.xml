@@ -112,7 +112,7 @@
 				<ladegut ladestelle="free_cargo_area warehouse">
 					<name>beet</name>
 					<gattung>Glm/Ztr</gattung>
-					<wagen zeitraum="woche">1</wagen>
+					<wagen zeitraum="woche">4</wagen>
 				</ladegut>
 			</versand>
 		</verlader>
@@ -120,21 +120,21 @@
 			<name>Piece goods</name>
 			<empfang>
 				<ladegut ladestelle="free_cargo_area warehouse">
-					<name>piece goods - R</name>
+					<name>piece goods</name>
 					<gattung>Glm/Z</gattung>
-					<wagen zeitraum="woche">1</wagen>
+					<wagen zeitraum="woche">2</wagen>
 				</ladegut>
 				<ladegut ladestelle="free_cargo_area warehouse">
 					<name>coal</name>
 					<gattung>E/Vtr</gattung>
-					<wagen>1</wagen>
+					<wagen zeitraum="woche">2</wagen>
 				</ladegut>
 			</empfang>
 			<versand>
 				<ladegut ladestelle="free_cargo_area warehouse">
-					<name>piece goods - D</name>
+					<name>piece goods</name>
 					<gattung>Glm/Z</gattung>
-					<wagen zeitraum="woche">1</wagen>
+					<wagen zeitraum="woche">2</wagen>
 				</ladegut>
 			</versand>
 		</verlader>
