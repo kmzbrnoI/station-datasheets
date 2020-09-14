@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../apophis-style/style.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "../bahnhof.dtd">
+
+<bahnhof>
+	<basecss>../apophis-style/style.css</basecss>
+	<langcss>../apophis-style/cz.css</langcss>
+	<name>Ivančice</name>
+	<kuerzel>Iv</kuerzel>
+	<typ>stanice</typ>
+	<langtyp>stanice</langtyp>
+	<verwaltung>ČSD</verwaltung>
+	<maszstab>87</maszstab>
+	<modulnr></modulnr>
+	<plan src="Iv.png" max-height="250px" />
+	<gleise>
+		<hgleise>
+			<gleis id="kolej_1">
+				<name>1</name>
+				<laenge einheit="mm"></laenge>
+			</gleis>
+			<gleis id="kolej_2">
+				<name>2</name>
+				<laenge einheit="mm"></laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="kolej_3">
+				<name>3</name>
+				<laenge einheit="mm"></laenge>
+			</gleis>
+			<gleis id="kolej_3a">
+				<name>3a</name>
+				<laenge einheit="mm"></laenge>
+			</gleis>
+			<gleis id="kolej_4">
+				<name>4</name>
+				<laenge einheit="mm"></laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="kolej_1">
+			<name>1</name>
+			<laenge einheit="mm"></laenge>
+		</bahnsteig>
+	</pv>
+	<gv>
+		<ladestelle id="warehouse" gleis="kolej_3">
+			<name>skladiště</name>
+			<laenge einheit="mm"></laenge>
+		</ladestelle>
+		<ladestelle id="free_cargo_area" gleis="kolej_3">
+			<name>volná nákladová plocha</name>
+			<laenge einheit="mm"></laenge>
+		</ladestelle>
+	</gv>
+</bahnhof>
+
