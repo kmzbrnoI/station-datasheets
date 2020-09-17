@@ -1,6 +1,6 @@
 # Station datasheets
 
-Datasheets of stations of TT model railroad at KMZ Brno I.
+Datasheets of stations of model railroad club KMZ Brno I.
 
 ## How to render datasheets
 
