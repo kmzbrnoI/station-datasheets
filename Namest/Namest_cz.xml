@@ -17,25 +17,25 @@
 		<hgleise>
 			<gleis id="kolej_1">
 				<name>1</name>
-				<laenge einheit="2900mm"></laenge>
+				<laenge einheit="mm">2900</laenge>
 			</gleis>
 			<gleis id="kolej_2">
 				<name>2</name>
-				<laenge einheit="130mm"></laenge>
+				<laenge einheit="mm">1300</laenge>
 			</gleis>
 		</hgleise>
 		<ngleise>
 			<gleis id="kolej_5">
 				<name>3</name>
-				<laenge einheit="2700mm"></laenge>
+				<laenge einheit="mm">2700</laenge>
 			</gleis>
 			<gleis id="kolej_3">
 				<name>3a</name>
-				<laenge einheit="2700mm"></laenge>
+				<laenge einheit="mm">2700</laenge>
 			</gleis>
 			<gleis id="vlecka">
 				<name>4</name>
-				<laenge einheit="400mm"></laenge>
+				<laenge einheit="mm">400</laenge>
 			</gleis>
 		</ngleise>
 	</gleise>
