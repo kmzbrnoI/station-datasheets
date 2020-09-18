@@ -19,22 +19,22 @@
 				<name>1</name>
 				<laenge einheit="mm">2900</laenge>
 			</gleis>
-			<gleis id="kolej_2">
-				<name>2</name>
-				<laenge einheit="mm">1300</laenge>
+			<gleis id="kolej_3">
+				<name>3</name>
+				<laenge einheit="mm">2700</laenge>
 			</gleis>
-		</hgleise>
-		<ngleise>
 			<gleis id="kolej_5">
 				<name>3</name>
 				<laenge einheit="mm">2700</laenge>
 			</gleis>
-			<gleis id="kolej_3">
-				<name>3a</name>
-				<laenge einheit="mm">2700</laenge>
+		</hgleise>
+		<ngleise>
+			<gleis id="kolej_2">
+				<name>2</name>
+				<laenge einheit="mm">1300</laenge>
 			</gleis>
 			<gleis id="vlecka">
-				<name>4</name>
+				<name>Vlečka</name>
 				<laenge einheit="mm">400</laenge>
 			</gleis>
 		</ngleise>
@@ -42,6 +42,10 @@
 	<pv>
 		<bahnsteig gleis="kolej_1">
 			<name>1</name>
+			<laenge einheit="mm"></laenge>
+		</bahnsteig>
+		<bahnsteig gleis="kolej_3">
+			<name>3</name>
 			<laenge einheit="mm"></laenge>
 		</bahnsteig>
 	</pv>
