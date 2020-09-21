@@ -32,10 +32,12 @@
 			<gleis id="kolej_3a">
 				<name>3a</name>
 				<laenge einheit="mm">400</laenge>
+				<bemerkung>Vlečka Avia Karoseria Ivančice; jeřáb</bemerkung>
 			</gleis>
 			<gleis id="kolej_4">
 				<name>4</name>
 				<laenge einheit="mm">1200</laenge>
+				<bemerkung>Výtopna</bemerkung>
 			</gleis>
 		</ngleise>
 	</gleise>
@@ -48,12 +50,127 @@
 	<gv>
 		<ladestelle id="warehouse" gleis="kolej_3">
 			<name>skladiště</name>
-			<laenge einheit="mm"></laenge>
+			<laenge einheit="mm">400</laenge>
 		</ladestelle>
 		<ladestelle id="free_cargo_area" gleis="kolej_3">
 			<name>volná nákladová plocha</name>
-			<laenge einheit="mm"></laenge>
+			<laenge einheit="mm">500</laenge>
 		</ladestelle>
+		<ladestelle id="avia" gleis="kolej_3a">
+			<name>vlečka Avia Karoseria</name>
+			<laenge einheit="mm">250</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Avia Karoseria</name>
+			<empfang>
+				<ladegut ladestelle="avia">
+					<name>kabely, kusové zásilky</name>
+					<gattung>Vtr, Pao</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>IVEX</name>
+			<empfang>
+				<ladegut ladestelle="avia">
+					<name>kov na výrobu trezorů</name>
+					<gattung>Vtr, Pao</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Uhelné sklady Ivančice</name>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>uhlí</name>
+					<gattung>Vtr</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Drobné zboží Jihlava</name>
+			<empfang>
+				<ladegut ladestelle="warehouse">
+					<name>modely vláčků</name>
+					<gattung>Ztr</gattung>
+					<wagen zeitraum="woche">5</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Silo Ivančice</name>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>obilí</name>
+					<gattung>Gbgs, Zts</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>JZD Ivančice</name>
+			<versand>
+				<ladegut ladestelle="warehouse">
+					<name>chřest</name>
+					<gattung>Ztr</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+			<versand>
+				<ladegut ladestelle="warehouse">
+					<name>marmelády, jablka</name>
+					<gattung>Ztr</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Depo Ivančice</name>
+			<empfang>
+				<ladegut ladestelle="kolej_4">
+					<name>uhlí</name>
+					<gattung>Vtr</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Cihlena Ivančice</name>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>uhlí</name>
+					<gattung>Vtr</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="free_cargo_area">
+					<name>cihly</name>
+					<gattung>Ztr</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Stavebniny Ivančice</name>
+			<empfang>
+				<ladegut ladestelle="warehouse">
+					<name>pytle cementu, omítky, tvárnice</name>
+					<gattung>Ztr</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>kanalizační trubky, skruže</name>
+					<gattung>Vtr, Nsk</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
 	</gv>
 </bahnhof>
 
