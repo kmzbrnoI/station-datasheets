@@ -23,15 +23,15 @@
 				<name>3</name>
 				<laenge einheit="mm">2700</laenge>
 			</gleis>
-			<gleis id="kolej_5">
-				<name>3</name>
-				<laenge einheit="mm">2700</laenge>
-			</gleis>
 		</hgleise>
 		<ngleise>
 			<gleis id="kolej_2">
 				<name>2</name>
 				<laenge einheit="mm">1300</laenge>
+			</gleis>
+			<gleis id="kolej_5">
+				<name>3</name>
+				<laenge einheit="mm">2700</laenge>
 			</gleis>
 			<gleis id="vlecka">
 				<name>Vlečka</name>
@@ -42,21 +42,87 @@
 	<pv>
 		<bahnsteig gleis="kolej_1">
 			<name>1</name>
-			<laenge einheit="mm"></laenge>
+			<laenge einheit="mm">1100</laenge>
 		</bahnsteig>
 		<bahnsteig gleis="kolej_3">
 			<name>3</name>
-			<laenge einheit="mm"></laenge>
+			<laenge einheit="mm">1300</laenge>
 		</bahnsteig>
 	</pv>
 	<gv>
-		<ladestelle id="warehouse" gleis="kolej_3">
+		<ladestelle id="warehouse" gleis="kolej_2">
 			<name>skladiště</name>
-			<laenge einheit="mm"></laenge>
+			<laenge einheit="mm">150</laenge>
 		</ladestelle>
-		<ladestelle id="free_cargo_area" gleis="kolej_3">
+		<ladestelle id="free_cargo_area" gleis="kolej_2">
 			<name>volná nákladová plocha</name>
-			<laenge einheit="mm"></laenge>
+			<laenge einheit="mm">150</laenge>
 		</ladestelle>
+		<ladestelle id="free_cargo_area5" gleis="kolej_5">
+			<name>volná nákladová plocha</name>
+			<laenge einheit="mm">2000</laenge>
+		</ladestelle>
+		<ladestelle id="silo" gleis="vlecka">
+			<name>vlečka Silo</name>
+			<laenge einheit="mm">300</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Uhelné sklady Náměšť</name>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area5">
+					<name>uhlí</name>
+					<gattung>Vtr</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Silo Náměšť</name>
+			<versand>
+				<ladegut ladestelle="silo">
+					<name>obilí</name>
+					<gattung>Gbgs, Zts</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+			<empfang>
+				<ladegut ladestelle="silo">
+					<name>obilí</name>
+					<gattung>Gbgs, Zts</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+			<empfang>
+				<ladegut ladestelle="silo">
+					<name>uhlí</name>
+					<gattung>Vtr</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Stavebniny Náměšť</name>
+			<empfang>
+				<ladegut ladestelle="warehouse">
+					<name>pytle cementu, omítky, tvárnice</name>
+					<gattung>Ztr</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>kanalizační trubky, skruže</name>
+					<gattung>Vtr, Nsk</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="free_cargo_area">
+					<name>vytěžené dřevo</name>
+					<gattung>Oa, Ot, Ns, Ndk, Otdr, Vtdr, Vtr</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
 	</gv>
 </bahnhof>
