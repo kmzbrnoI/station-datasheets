@@ -5,7 +5,7 @@
 <bahnhof>
 	<basecss>../apophis-style/style.css</basecss>
 	<langcss>../apophis-style/cz.css</langcss>
-	<name>Náměšť</name>
+	<name>Náměšť na Hané</name>
 	<kuerzel>Na</kuerzel>
 	<typ>stanice</typ>
 	<langtyp>stanice</langtyp>
@@ -30,7 +30,7 @@
 				<laenge einheit="mm">1300</laenge>
 			</gleis>
 			<gleis id="kolej_5">
-				<name>3</name>
+				<name>5</name>
 				<laenge einheit="mm">2700</laenge>
 			</gleis>
 			<gleis id="vlecka">
