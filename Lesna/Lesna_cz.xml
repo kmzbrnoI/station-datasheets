@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../apophis-style/style.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "../bahnhof.dtd">
+
+<bahnhof>
+	<basecss>../apophis-style/style.css</basecss>
+	<langcss>../apophis-style/cz.css</langcss>
+	<name>Lesná</name>
+	<kuerzel>Le</kuerzel>
+	<typ>stanice</typ>
+	<langtyp>stanice</langtyp>
+	<verwaltung>ČSD</verwaltung>
+	<maszstab>87</maszstab>
+	<modulnr></modulnr>
+	<plan src="Le.png" max-height="250px" />
+	<gleise>
+		<hgleise>
+			<gleis id="kolej_1">
+				<name>1</name>
+				<laenge einheit="mm">2000</laenge>
+			</gleis>
+			<gleis id="kolej_1a">
+				<name>1a</name>
+				<laenge einheit="mm">700</laenge>
+			</gleis>
+			<gleis id="kolej_2">
+				<name>2</name>
+				<laenge einheit="mm">1500</laenge>
+			</gleis>
+			<gleis id="kolej_2a">
+				<name>2a</name>
+				<laenge einheit="mm">1300</laenge>
+			</gleis>
+			<gleis id="kolej_3">
+				<name>3</name>
+				<laenge einheit="mm">2000</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="kolej_4">
+				<name>4</name>
+				<laenge einheit="mm">1300</laenge>
+			</gleis>
+			<gleis id="kolej_6">
+				<name>6</name>
+				<laenge einheit="mm">400</laenge>
+			</gleis>
+			<gleis id="vlecka_lom_nova">
+				<name>Vlečka lom nová</name>
+				<laenge einheit="mm">1500</laenge>
+			</gleis>
+			<gleis id="vlecka_lom">
+				<name>Vlečka lom</name>
+				<laenge einheit="mm">600</laenge>
+			</gleis>
+			<gleis id="vlecka_silo">
+				<name>Vlečka silo</name>
+				<laenge einheit="mm">900</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="kolej_1">
+			<name>1</name>
+			<laenge einheit="mm">1000</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="kolej_2a">
+			<name>2a</name>
+			<laenge einheit="mm">800</laenge>
+		</bahnsteig>
+	</pv>
+	<gv>
+		<ladestelle id="warehouse" gleis="kolej_6">
+			<name>skladiště</name>
+			<laenge einheit="mm">150</laenge>
+		</ladestelle>
+		<ladestelle id="free_cargo_area" gleis="kolej_4">
+			<name>volná nakládková plocha</name>
+			<laenge einheit="mm">600</laenge>
+		</ladestelle>
+		<ladestelle id="silo" gleis="vlecka_silo">
+			<name>vlečka silo</name>
+			<laenge einheit="mm">400</laenge>
+		</ladestelle>
+		<ladestelle id="vlecka_lom_nova" gleis="vlecka_lom_nova">
+			<name>vlečka lom nová</name>
+			<laenge einheit="mm">500</laenge>
+		</ladestelle>
+		<ladestelle id="vlecka_lom" gleis="vlecka_lom">
+			<name>vlečka lom</name>
+			<laenge einheit="mm">400</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Silo Náměšť</name>
+			<versand>
+				<ladegut ladestelle="silo">
+					<name>obilí</name>
+					<gattung>Gbgs, Zts</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+			<empfang>
+				<ladegut ladestelle="silo">
+					<name>obilí</name>
+					<gattung>Gbgs, Zts</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+			<empfang>
+				<ladegut ladestelle="silo">
+					<name>uhlí</name>
+					<gattung>Vtr</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Štěrkovna Lesná</name>
+			<versand>
+				<ladegut ladestelle="vlecka_lom">
+					<name>štěrk</name>
+					<gattung>Sa, Sz</gattung>
+					<wagen zeitraum="tag">4</wagen>
+				</ladegut>
+			</versand>
+			<versand>
+				<ladegut ladestelle="vlecka_lom_nova">
+					<name>štěrk</name>
+					<gattung>Sa, Sz</gattung>
+					<wagen zeitraum="tag">4</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Stavební výroba Lesná</name>
+			<versand>
+				<ladegut ladestelle="free_cargo_area">
+					<name>betonové výrobky: skruže</name>
+					<gattung>Vtr, Nsk</gattung>
+					<wagen zeitraum="tag">3</wagen>
+				</ladegut>
+			</versand>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>cement palety</name>
+					<gattung>Ztr</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>písek</name>
+					<gattung>Vtr, Utz</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Skladiště Lesná</name>
+			<versand>
+				<ladegut ladestelle="warehouse">
+					<name>kusové zásilky</name>
+					<gattung>Z, Ztr</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Uhelné sklady Lesná</name>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>uhlí</name>
+					<gattung>Vtr</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Lesní podnik</name>
+			<versand>
+				<ladegut ladestelle="free_cargo_area">
+					<name>dřevo</name>
+					<gattung>Otdr, Ot, Oa, Vtdr</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Rudá armáda</name>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>rakety</name>
+					<gattung></gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>benzín</name>
+					<gattung>Rt</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+	</gv>
+</bahnhof>
