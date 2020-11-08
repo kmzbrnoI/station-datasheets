@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../apophis-style/style.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "../bahnhof.dtd">
+
+<bahnhof>
+	<basecss>../apophis-style/style.css</basecss>
+	<langcss>../apophis-style/cz.css</langcss>
+	<name>Břízky</name>
+	<kuerzel>Br</kuerzel>
+	<typ>stanice</typ>
+	<langtyp>stanice</langtyp>
+	<verwaltung>ČSD</verwaltung>
+	<maszstab>87</maszstab>
+	<modulnr></modulnr>
+	<plan src="Br.png" max-height="350px" />
+	<gleise>
+		<hgleise>
+			<gleis id="kolej_1">
+				<name>1</name>
+				<laenge einheit="mm">1110</laenge>
+			</gleis>
+			<gleis id="kolej_3">
+				<name>3</name>
+				<laenge einheit="mm">600</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="vlecky">
+				<name>vlečky</name>
+				<laenge einheit="mm">1000</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="kolej_1">
+			<name>1</name>
+			<laenge einheit="mm">1100</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="kolej_3">
+			<name>3</name>
+			<laenge einheit="mm">600</laenge>
+		</bahnsteig>
+	</pv>
+	<gv>
+		<ladestelle id="warehouse" gleis="vlecky">
+			<name>skladiště</name>
+			<laenge einheit="mm">250</laenge>
+		</ladestelle>
+		<ladestelle id="free_cargo_area" gleis="vlecky">
+			<name>volná nakládková plocha</name>
+			<laenge einheit="mm">150</laenge>
+		</ladestelle>
+		<ladestelle id="depo" gleis="vlecky">
+			<name>depo</name>
+			<laenge einheit="mm">200</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Depo Břízky</name>
+			<empfang>
+				<ladegut ladestelle="depo">
+					<name>uhlí</name>
+					<gattung>Vtr</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<empfang>
+				<ladegut ladestelle="depo">
+					<name>ropa</name>
+					<gattung>Rt</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<empfang>
+				<ladegut ladestelle="depo">
+					<name>mazivo</name>
+					<gattung>Ztr</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<empfang>
+				<ladegut ladestelle="depo">
+					<name>písek</name>
+					<gattung>Vtr</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Vojenský areál Břízky</name>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>vojenská technika</name>
+					<gattung>Pao, Nsk</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>JZD Břízky</name>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>zemědělská technika</name>
+					<gattung>Pao, Nsk</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>krmivo</name>
+					<gattung>Ztr</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Stavebniny Břízky</name>
+			<empfang>
+				<ladegut ladestelle="free_cargo_area">
+					<name>Betonové výrobky, cihly, tvárnice, trubky</name>
+					<gattung>Ztr, Vtr</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Cihelna Břízky</name>
+			<versand>
+				<ladegut ladestelle="free_cargo_area">
+					<name>cihly</name>
+					<gattung>Ztr</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+	</gv>
+</bahnhof>
